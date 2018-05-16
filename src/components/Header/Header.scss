@@ -1,0 +1,85 @@
+    .header {
+        background: rgba(0, 0, 0, 0.9);
+        nav {
+            display: flex;
+            .logo {
+                width: 116px;
+                height: 50px;
+                background-position: 0% 50%;
+                background-repeat: no-repeat;
+                background-image: url("../../assets/images/logo.png");
+                cursor: pointer;
+            }
+            .header-menu {
+                margin-left: 50px;
+                display: flex;
+                li {
+                    position: relative;
+                    font-size: 16px;
+                    a {
+                        display: block;
+                        padding: 13px;
+                        color: #ffffff;
+                        letter-spacing: 0.3px;
+                        font-weight: 600;
+                        text-decoration: none;
+                        transition: all 0.3s;
+                        &:hover {
+                            color: #ff3333;
+                        }
+                    }
+                    a.active {
+                        color: #30c2f2;
+                    }
+                }
+            }
+        }
+        .auth {
+            display: flex;
+            justify-content: right;
+            float: right;
+            li {
+                a {
+                    display: block;
+                    padding: 13px;
+                    color: #ffffff;
+                    letter-spacing: 0.3px;
+                    font-weight: 600;
+                    text-decoration: none;
+                    transition: all 0.3s;
+                    cursor: pointer;
+                    &:hover {
+                        color: #ff3333;
+                    }
+                }
+            }
+        }
+    }
+
+    /**** MEDIA QUERY ****/
+
+    @media only screen and (max-width: 1200px) {}
+
+    @media only screen and (max-width: 992px) {}
+
+    @media only screen and (max-width: 768px) {}
+
+    @media only screen and (max-width: 576px) {
+        .header nav {
+            display: flex;
+            flex-direction: column;
+            .logo {
+                margin: 0px auto;
+            }
+        }
+        .header nav .header-menu {
+            margin-left: 0px;
+            display: flex;
+            justify-content: center;
+        }
+        .header .auth {
+            display: block;
+        }
+    }
+
+    @media only screen and (max-width: 320px) {}

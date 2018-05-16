@@ -1,0 +1,32 @@
+ .top-rate-movies {
+     h2 {
+         margin: 30px 0px;
+         line-height: 24px;
+         font-size: 24px;
+         font-weight: 700;
+     }
+     .movie {
+         margin-bottom: 30px;
+         .title {
+             margin-top: 10px;
+             a {
+                 color: #333;
+                 margin: 2px 0;
+                 font-size: 14px;
+                 font-weight: 600;
+                 text-decoration: none;
+             }
+         }
+         .description {
+             margin: 2px 0;
+             line-height: 18px;
+             font-size: 14px;
+             color: #a6a6a6;
+         }
+     }
+     .read-more {
+         display: block;
+         margin-top: 5px;
+         text-align: right
+     }
+ }
